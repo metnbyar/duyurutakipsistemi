@@ -1,0 +1,41 @@
+
+<%- include('includes/head.ejs') %>
+<%- include('includes/nav.ejs') %>
+        <!-- Header-->
+      <header class="masthead text-center text-white">
+          <h1>Giriş Yap</h1>
+            <br>
+            <div class="container px-5">
+                <div class="container px-5">
+                    <div class="container px-5">
+                        <div class="container px-5">
+                            <div class="container px-5">
+                                <div class="container px-5">
+                                    <div class="container px-5">
+                                        <div class="container px-5">
+                    
+                      <form class="needs-validation" novalidate="" method="post" action="/giris_yap">
+                        <div class="pb-3 mb-3">
+                          <div class="position-relative"><i class="ai-mail fs-lg position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                            <input class="form-control form-control-lg ps-5" type="email" placeholder="Eposta Adresiniz" name="eposta" required>
+                          </div>
+                        </div>
+                        <div class="mb-4">
+                          <div class="position-relative"><i class="ai-lock-closed fs-lg position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                            <div class="password-toggle">
+                              <input class="form-control form-control-lg ps-5" type="password" name="sifre" placeholder="Şifre" required="required">
+                              <label class="password-toggle-btn" aria-label="Show/hide password">
+                                
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <input type="hidden" name="_csrf" value="<%=csrfToken%>">
+                        <button class="btn btn-lg btn-warning w-100 mb-4" type="submit" name="kayit" value="1">Giriş Yap</button>
+                      
+                      </form>
+                    </div></div></div></div>
+                </div></div></div></div>
+        </header>
+       
+  <%- include('includes/foot.ejs') %>
